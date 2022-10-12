@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>rock,scissors,paper</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+</head>
+<body>
+    <div id="wrap">
+
+        <header>
+            <h1>도전! 가위,바위,보!</h1>
+            <p>
+                <button class="reset"><span class="icon"></span> reset</button>
+            </p>
+        </header>
+
+        <section>
+            <h2>가위바위보</h2>
+            <div class="game">
+                <p class="com">
+                    <span class="frame">
+                        <img class="cptPrint" src="./images/roc.png" alt="#">
+                    </span>
+                    <span class="name">computer</span>
+                </p>
+                <p class="user">
+                    <span class="frame">
+                        <img class="userPrint" src="./images/pap.png" alt="#">
+                    </span>
+                    <span class="name userName">user</span>
+                </p>
+                <div class="result">
+                    <p class="count"><span class="round">1</span> round</p>
+                    <p class="vs">
+                        <span class="pcWin">0</span> : <span class="userWin">0</span>
+                    </p>
+                    <p class="winner">가위! 바위! 보!</p>
+                </div>
+            </div>
+
+            <div class="input">
+                <p>버튼을 눌러주세요!</p>
+                <button class="btn scissors" onClick="play('scissors');">가위</button>
+                <button class="btn rock" onClick="play('rock');">바위</button>
+                <button class="btn paper" onClick="play('paper');">보</button>
+            </div>
+
+        </section>
+
+        <address>&copy;Designed By SeungHye Jo</address>
+    </div>
+
+    <script src="./js/javascrip.js"></script>
+</body>
+</html>

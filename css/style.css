@@ -1,0 +1,199 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'UhBeeSe_hyun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body{
+    background-color: #5004de96;
+}
+
+#wrap{
+    position: relative;
+    width: 840px;
+    margin: 80px auto 0;
+    font-family: 'UhBeeSe_hyun';
+    text-align: center;
+    word-spacing: 8px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #1d0052;
+}
+
+header{
+    position: relative;
+}
+
+header>h1{
+    padding: 35px;
+    letter-spacing: 5px;
+}
+
+header>p{
+    position: absolute;
+    right: 35px;
+    top: 30px;
+}
+
+header>p>.reset{
+    position: relative;
+    width: 70px;
+    height: 25px;
+    padding-left: 15px;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    outline: none;
+
+    box-shadow: 1px 1px 2px #ebebeb;
+
+    cursor: pointer;
+}
+
+header>p>.reset>.icon{
+    display: block;
+    position: absolute;
+    left: 8px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/reset.png);
+    background-size: contain;
+}
+
+section{
+    position: relative;
+}
+
+section>h2{
+    position: relative;
+    left: -9999px;
+}
+
+section>.game{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+}
+
+section>.game>p{
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid #000; */
+}
+
+section>.game>p>.frame{
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+section>.game>p>.frame>img{
+    width: 100%;
+}
+
+section>.game>p>.name{
+    display: block;
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+section>.game>.result{
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: 20px;
+    width: 200px;
+    /* border: 1px solid #000; */
+}
+
+section>.game>.result>.count{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+section>.game>.result>.vs{
+    width: 120px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 100px;
+    white-space: nowrap;
+    background-color: #d4d1f1;
+    border-radius: 50px;
+}
+
+section>.game>.result>.winner{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+section>.input{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    height: 150px;
+    margin: 20px auto 0;
+    padding: 20px 0 10px;
+    border-top: 1px solid #dedede;
+    /* border: 1px solid #000; */
+}
+
+section>.input>p{
+    position: absolute;
+    top: 20px;
+}
+
+section>.input>.btn{
+    display: block;
+
+    width: 100px;
+    height: 100px;
+    margin: 30px 40px 0;
+    text-indent: -9999px;
+    
+    background: none;
+    background-size: 110%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    border: none;
+    outline: none;
+    border-radius: 50px;
+
+    cursor: pointer;
+    transition: all .3s;
+}
+
+section>.input>.rock{
+    background-image: url(../images/btn_roc.png);
+}
+section>.input>.scissors{
+    background-image: url(../images/btn_scsor.png);
+}
+section>.input>.paper{
+    background-image: url(../images/btn_pap.png);
+}
+
+section>.input>.btn:hover{
+    background-size: 120%;
+}
+
+address{
+    position: absolute;
+    bottom: -35px;
+    width: 100%;
+    padding: 10px 0;
+    color: rgb(30, 10, 60);
+    font-weight: 500;
+    font-family: '고딕','sans-serif';
+    text-align: center;
+}
